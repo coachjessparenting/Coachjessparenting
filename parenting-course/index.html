@@ -606,8 +606,8 @@
               <div class="interest-card" onclick="selectInterest(this,'ready')" data-value="ready">
                 <div class="radio-dot"><div class="radio-dot-inner"></div></div>
                 <div class="interest-card-text">
-                  <strong>Ready to invest</strong>
-                  <span>I'm in. Just tell me when and how much.</span>
+                  <strong>Sign me up, I'm ready to go</strong>
+                  <span>Just tell me when and how much.</span>
                 </div>
               </div>
               <div class="interest-card" onclick="selectInterest(this,'waiting')" data-value="waiting">
@@ -620,7 +620,7 @@
               <div class="interest-card" onclick="selectInterest(this,'curious')" data-value="curious">
                 <div class="radio-dot"><div class="radio-dot-inner"></div></div>
                 <div class="interest-card-text">
-                  <strong>Just curious right now</strong>
+                  <strong>Just looking into it</strong>
                   <span>Not ready yet, but I want to stay in the loop.</span>
                 </div>
               </div>
@@ -631,6 +631,47 @@
                   <span>I'd love to try before I buy.</span>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <hr class="form-divider" />
+
+          <!-- Format Preference -->
+          <div class="form-section">
+            <h3>What format interests you?</h3>
+            <div class="info-box" style="margin-bottom:16px;">
+              The biggest transformation comes from going through the <strong>full 6-week curriculum</strong> — that is always what we recommend. We also know that is a big commitment, and we want to meet you where you are.
+            </div>
+            <span class="hint">Select all that apply</span>
+            <div class="check-grid" style="margin-bottom:14px;">
+              <label class="check-label"><input type="checkbox" name="format" value="Full 6-week course (recommended)" /><span>Full 6-week course <em style="font-size:12px;color:#C4622D;">(recommended)</em></span></label>
+              <label class="check-label"><input type="checkbox" name="format" value="Shorter 3-week program" /><span>Shorter 3-week program</span></label>
+              <label class="check-label"><input type="checkbox" name="format" value="One-time seminar" /><span>One-time seminar</span></label>
+              <label class="check-label"><input type="checkbox" name="format" value="One-on-one coaching (specific situation)" /><span>One-on-one coaching</span></label>
+              <label class="check-label"><input type="checkbox" name="format" value="Online resources / self-paced" /><span>Online resources / self-paced</span></label>
+              <label class="check-label"><input type="checkbox" name="format" value="Newsletter / ongoing email support" /><span>Newsletter / email support</span></label>
+              <label class="check-label"><input type="checkbox" name="format" value="Help me start my own small group" /><span>Help me start my own small group</span></label>
+              <label class="check-label"><input type="checkbox" name="format" value="Not sure yet" /><span>Not sure yet</span></label>
+            </div>
+            <div>
+              <label class="field-label">Other format ideas? Tell me more:</label>
+              <textarea name="format_other" rows="2" placeholder="Describe what would work best for you..."></textarea>
+            </div>
+          </div>
+
+          <hr class="form-divider" />
+
+          <!-- Group Style -->
+          <div class="form-section">
+            <h3>What kind of group setting appeals to you?</h3>
+            <div class="info-box">
+              A <strong>couples course</strong> would run in the evenings so spouses can attend together. A <strong>moms-only group</strong> would be daytime or evening, women only. Your input here helps me know whether there's enough interest to run both.
+            </div>
+            <div class="radio-group" style="margin-top:4px;">
+              <label class="check-label"><input type="radio" name="group_style" value="Couples course (evenings, with spouse/partner)" /><span>Couples course, evenings with my spouse/partner</span></label>
+              <label class="check-label"><input type="radio" name="group_style" value="Moms-only group" /><span>Moms-only group</span></label>
+              <label class="check-label"><input type="radio" name="group_style" value="Either works for me" /><span>Either works for me</span></label>
+              <label class="check-label"><input type="radio" name="group_style" value="My spouse wouldn't attend but I still want to" /><span>My spouse wouldn't attend but I still want to</span></label>
             </div>
           </div>
 
@@ -749,6 +790,16 @@
           <div class="form-section">
             <h3>How did you hear about this?</h3>
             <input type="text" name="how_heard" placeholder="Facebook group, friend, church, Instagram..." />
+          </div>
+
+          <!-- Newsletter opt-in -->
+          <div class="form-section" style="margin-bottom:24px;">
+            <div style="background:#F0EBE3;border-radius:10px;padding:16px 18px;">
+              <label class="check-label" style="align-items:center;">
+                <input type="checkbox" name="newsletter_optin" value="Yes, send me free resources and updates" style="margin-top:0;" />
+                <span style="font-size:14px;line-height:1.5;">Yes! I'd love to receive free parenting resources, tips, and updates from Coach Jess.</span>
+              </label>
+            </div>
           </div>
 
           <button type="submit" class="submit-btn" id="submit-btn">Count Me In →</button>
